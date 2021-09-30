@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mon-li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.mon-dr{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.play-li{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.play-dr{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+.header h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.Ingredients .Instructions{
+    font-size: 24px;
+}
+.svg-text, .info-text, .text p{
+    font-size: 16px;
+}
+.p-li{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #BDBDBD;
+}
+.p-dr{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+.container{
+    width: 1100px;
+    height: max-content;
+    margin: 50px auto;
+    /* background-color: red; */
+}
+.head-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+.svg{
+    margin-right: 10px;
+}
+.image, .Crust, .Cheesecake, .Instructions{
+    margin-top: 30px;
+}
+h3, h2{
+    margin-bottom: 25px;
+}
+.input{
+    display: flex;
+}
+input{
+    display: inline;
+    margin-right: 8px;
+}
+.small-container{
+    display: flex;
+    margin-top: 30px;
+}
+.text{
+    width: 52%;
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.info-text{
+    width: 93%;
+}
+.no-box{
+    background-color:#F2994A;
+    ;
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 180px;
+    margin-left: 200px;
+    /* background-color: yellow; */
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 0px rgb(224, 223, 223);
+    padding: 30px 0px;
+}
+.card .time{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.card .time:nth-child(1) i{
+    color: #F2994A;
+}
+.card i{
+    color: black;
+    margin-right: 15px;
+}
+.p-col{
+    color: #F2994A;
+}
+
+@media(max-width:540px) {
+    .container{
+        width: 480px;
+        height: max-content;
+        margin: 25px auto;
+    }
+    .header h1{
+        font-size: 28px;
+    }
+    .Ingredients .Instructions{
+        font-size: 18px;
+    }
+    .svg-text, .info-text, .text p{
+        font-size: 14px;
+    }
+    .head-cont{
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+    }
+    .small-container{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .text{
+        width: 100%;
+    }
+    .card{
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+        box-shadow: none;
+    }
+    .card div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card .time:nth-child(1){
+        order: -1;
+        flex: 1 0 100%;
+    }
+    .time{
+        margin-right: auto;
+    }
+    .time div{
+        display: block;
+    }
+}
+@media(max-width:420px) {
+    .container{
+        width: 380px;
+        height: max-content;
+        margin: 25px auto;
+    }
+    .header h1{
+        font-size: 22px;
+    }
+    .Ingredients .Instructions{
+        font-size: 16px;
+    }
+    .svg-text, .info-text, .text p{
+        font-size: 12px;
+    }
+    
+}
+@media(max-width:360px) {
+    .container{
+        width: 340px;
+        height: max-content;
+        margin: 25px auto;
+    }
+    .header h1{
+        font-size: 20px;
+    }
+    .Ingredients .Instructions{
+        font-size: 20px;
+    }
+    .svg-text, .info-text, .text p{
+        font-size: 12px;
+    }
+}
